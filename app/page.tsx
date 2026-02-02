@@ -27,7 +27,6 @@ export default function Home() {
         <div className="animate-float px-6 text-center">
           <h2
             className="flex flex-wrap justify-center text-5xl font-extrabold tracking-tighter sm:text-7xl md:text-8xl lg:text-9xl"
-            style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
           >
             {['Julio', 'Herrera', 'Veluthini'].map((word, i) => (
               <span key={i} className="animate-reveal mx-[0.15em] inline-block" style={{ animationDelay: `${i * 0.4}s` }}>
