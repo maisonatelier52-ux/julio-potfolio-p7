@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* Top Left Text */}
       <div className="fixed top-8 left-8 z-10">
-        <h1 className="text-3xl font-extrabold tracking-tight text-white" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+        <h1 className="animate-gradient text-xl font-extrabold tracking-tight" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
           JHV
         </h1>
       </div>

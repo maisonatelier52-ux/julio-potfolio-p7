@@ -70,11 +70,11 @@ body {
 }
 
 .animate-float {
-  animation: float 6s ease-in-out infinite;
+  animation: float 16s ease-in-out infinite;
 }
 
 .animate-gradient {
-  background: linear-gradient(-45deg, #ffffff, #a1a1aa, #ffffff, #d4d4d8);
+  background: linear-gradient(-45deg, #ffffffb9, #a1a1aa, #494848d4, #d4d4d8);
   background-size: 400% 400%;
   animation: gradient-shift 10s ease infinite;
   -webkit-background-clip: text;
