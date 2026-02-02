@@ -66,8 +66,7 @@ body {
 }
 
 .animate-reveal {
-  opacity: 0;
-  animation: reveal 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: reveal 2.5s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .animate-float {
