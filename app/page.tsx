@@ -30,11 +30,8 @@ export default function Home() {
             style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
           >
             {['Julio', 'Herrera', 'Veluthini'].map((word, i) => (
-              <span key={i} className="mx-[0.15em] inline-block">
-                <span
-                  className="animate-reveal animate-gradient inline-block leading-none"
-                  style={{ animationDelay: `${i * 0.4}s` }}
-                >
+              <span key={i} className="animate-reveal mx-[0.15em] inline-block" style={{ animationDelay: `${i * 0.4}s` }}>
+                <span className="animate-gradient inline-block leading-none">
                   {word}
                 </span>
               </span>
@@ -42,6 +39,7 @@ export default function Home() {
           </h2>
         </div>
       </main>
+
 
 
     </div>
