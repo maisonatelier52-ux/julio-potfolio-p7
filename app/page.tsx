@@ -26,7 +26,7 @@ export default function Home() {
       <main className="relative z-10 flex min-h-screen items-center justify-center">
         <div className="animate-float px-6 text-center">
           <h2
-            className="flex flex-wrap justify-center text-5xl font-light tracking-tighter sm:text-7xl md:text-8xl lg:text-9xl"
+            className="flex flex-wrap justify-center text-5xl font-extrabold tracking-tighter sm:text-7xl md:text-8xl lg:text-9xl"
             style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
           >
             {['Julio', 'Herrera', 'Veluthini'].map((word, i) => (
