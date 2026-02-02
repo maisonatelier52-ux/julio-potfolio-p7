@@ -17,7 +17,7 @@ export default function Home() {
 
       {/* Top Left Text */}
       <div className="fixed top-8 left-8 z-10">
-        <h1 className="animate-gradient text-xl font-extrabold tracking-tight" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+        <h1 className="animate-gradient text-xl font-light tracking-tight" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
           JHV
         </h1>
       </div>
@@ -26,14 +26,14 @@ export default function Home() {
       <main className="relative z-10 flex min-h-screen items-center justify-center">
         <div className="animate-float px-6 text-center">
           <h2
-            className="flex flex-wrap justify-center text-5xl font-extrabold tracking-tighter sm:text-7xl md:text-8xl lg:text-9xl"
+            className="flex flex-wrap justify-center text-5xl font-light tracking-tighter sm:text-7xl md:text-8xl lg:text-9xl"
             style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
           >
             {['Julio', 'Herrera', 'Veluthini'].map((word, i) => (
-              <span key={i} className="reveal-container mx-[0.1em]">
+              <span key={i} className="mx-[0.15em] inline-block">
                 <span
                   className="animate-reveal animate-gradient inline-block leading-none"
-                  style={{ animationDelay: `${i * 0.2}s` }}
+                  style={{ animationDelay: `${i * 0.4}s` }}
                 >
                   {word}
                 </span>
@@ -42,6 +42,7 @@ export default function Home() {
           </h2>
         </div>
       </main>
+
 
     </div>
   );
