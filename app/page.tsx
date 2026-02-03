@@ -30,13 +30,13 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-mint transition-colors"><i className="text-lg">in</i></a>
-            <a href="#" className="hover:text-mint transition-colors"><i className="text-lg">f</i></a>
-            <a href="#" className="hover:text-mint transition-colors"><i className="text-lg">ig</i></a>
+            <a href="#" className="hover:text-white/60 transition-colors"><i>in</i></a>
+            <a href="#" className="hover:text-white/60 transition-colors"><i>f</i></a>
+            <a href="#" className="hover:text-white/60 transition-colors"><i>ig</i></a>
           </div>
 
           {/* TRANSFORM BUTTON */}
-          <button className="flex items-center justify-between w-full max-w-[260px] bg-white/5 border border-white/10 hover:border-mint/50 py-3 px-6 rounded-full transition-all group">
+          <button className="flex items-center justify-between w-full max-w-[260px] bg-white/5 border border-white/10 hover:border-white/50 py-3 px-6 rounded-full transition-all group">
             <span className="text-[10px] uppercase tracking-widest font-bold">Read More About</span>
             <div className=" text-white rounded-full  group-hover:scale-110 transition-transform">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l10-10M7 7h10v10" /></svg>
@@ -70,7 +70,7 @@ export default function Home() {
             <a href="#" className="px-4 lg:px-6 py-2 text-white/60 hover:text-white text-[10px] lg:text-xs font-medium transition-all">ABOUT</a>
           </nav>
 
-          <button className="hidden sm:block mr-4 px-8 py-3 rounded-full border border-white/20 hover:border-mint text-xs font-bold tracking-widest transition-all">
+          <button className="hidden sm:block mr-4 px-8 py-3 rounded-full border border-white/20 hover:border-white text-xs font-bold tracking-widest transition-all">
             JHV
           </button>
         </div>
