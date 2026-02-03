@@ -38,7 +38,7 @@ export default function Home() {
           {/* TRANSFORM BUTTON */}
           <button className="flex items-center justify-between w-full max-w-[260px] bg-white/5 border border-white/10 hover:border-mint/50 py-3 px-6 rounded-full transition-all group">
             <span className="text-[10px] uppercase tracking-widest font-bold">Read More About</span>
-            <div className="bg-mint text-white rounded-full  group-hover:scale-110 transition-transform">
+            <div className=" text-white rounded-full  group-hover:scale-110 transition-transform">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l10-10M7 7h10v10" /></svg>
             </div>
           </button>
