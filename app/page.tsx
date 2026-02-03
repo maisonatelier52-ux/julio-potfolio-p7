@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen w-full bg-black text-white font-sans lg:overflow-hidden">
+    <div className="flex flex-col lg:flex-row min-h-screen w-full bg-black text-white font-sans lg:overflow-hidden py-0 md:py-4">
 
       {/* LEFT SIDEBAR / MOBILE HEADER */}
       <aside className="lg:fixed lg:left-0 lg:top-0 lg:h-full lg:w-[22%] flex flex-col justify-between p-6 lg:p-12 z-20">
@@ -59,7 +59,7 @@ export default function Home() {
           >
             <source src="/Firefly%20make%20a%20modern%20animated%20video%20for%20portfolio%20website%20by%20the%20person%20image%20319776%20(1).mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-black/80 lg:from-black/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-black/70 lg:from-black/60 to-transparent"></div>
         </div>
 
         {/* TOP NAVIGATION INSIDE PANEL */}
