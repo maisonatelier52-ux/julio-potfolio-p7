@@ -17,19 +17,19 @@ export default function Home() {
 
       {/* Top Left Text */}
       <div className="fixed top-8 left-8 z-10">
-        <h1 className="animate-gradient text-xl font-light tracking-tight" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+        <h1 className="animate-gradient glass-text text-xl font-light tracking-tight" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
           JHV
         </h1>
       </div>
 
       {/* Main Animated Name */}
       <main className="relative z-10 flex min-h-screen items-center justify-center">
-        <div className="animate-float px-6 text-center">
+        <div className="animate-float glass-container mx-4">
           <h2
-            className="flex flex-wrap justify-center text-5xl font-extrabold tracking-tighter sm:text-7xl md:text-8xl lg:text-9xl"
+            className="flex flex-wrap justify-center text-5xl font-extralight tracking-tighter sm:text-7xl md:text-8xl lg:text-9xl"
           >
-            {['Julio', 'Herrera', 'Veluthini'].map((word, i) => (
-              <span key={i} className="animate-reveal mx-[0.15em] inline-block" style={{ animationDelay: `${i * 0.4}s` }}>
+            {['Julio', 'Herrera', 'Velutini'].map((word, i) => (
+              <span key={i} className="animate-reveal mx-[0.15em] inline-block" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
                 <span className="animate-gradient inline-block leading-none">
                   {word}
                 </span>
