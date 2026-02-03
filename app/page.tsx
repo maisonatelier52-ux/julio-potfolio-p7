@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen w-full bg-black text-white font-sans overflow-hidden p-4">
+    <div className="flex flex-col lg:flex-row min-h-screen w-full bg-black text-white font-sans lg:overflow-hidden">
 
-      {/* LEFT SIDEBAR */}
-      <aside className="fixed left-0 top-0 h-full w-[22%] flex flex-col justify-between p-12 z-20">
+      {/* LEFT SIDEBAR / MOBILE HEADER */}
+      <aside className="lg:fixed lg:left-0 lg:top-0 lg:h-full lg:w-[22%] flex flex-col justify-between p-6 lg:p-12 z-20">
 
         {/* LOGO SECTION */}
-        <div className="flex items-start gap-4">
-          <div className="sidebar-vertical-text flex items-center gap-0">
-            <span className="text-7xl font-black tracking-tighter leading-none transform ">JHV</span>
+        <div className="flex items-start gap-4 mb-8 lg:mb-0">
+          <div className="flex lg:sidebar-vertical-text items-center gap-0">
+            <span className="text-4xl lg:text-7xl font-black tracking-tighter leading-none transform ">JHV</span>
             <div className="flex flex-col ml-4">
               <span className="text-[10px] uppercase tracking-[0.3em] font-medium text-white/60">Banking</span>
               <span className="text-[10px] uppercase tracking-[0.3em] font-medium text-white/60">Innovator</span>
@@ -18,8 +18,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* FOLLOW US & SOCIALS */}
-        <div className="flex flex-col gap-8">
+        {/* FOLLOW US & SOCIALS - HIDDEN ON SMALL MOBILE OR MOVED */}
+        <div className="hidden lg:flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <span className="text-xs tracking-[0.2em] font-bold text-white/40">1890's</span>
             <p className="text-[11px] leading-relaxed text-white/50 max-w-[200px]">
@@ -46,7 +46,7 @@ export default function Home() {
       </aside>
 
       {/* MAIN CONTENT AREA */}
-      <main className="ml-auto w-[78%] relative min-h-[calc(100vh-2rem)] curved-panel bg-[#121212] overflow-hidden">
+      <main className="lg:ml-auto w-full lg:w-[78%] relative min-h-[calc(100vh-2rem)] lg:curved-panel bg-[#121212] overflow-hidden rounded-[40px] lg:rounded-[60px]">
 
         {/* VIDEO BACKGROUND INSIDE PANEL */}
         <div className="absolute inset-0 z-0">
@@ -59,47 +59,47 @@ export default function Home() {
           >
             <source src="/Firefly%20make%20a%20modern%20animated%20video%20for%20portfolio%20website%20by%20the%20person%20image%20319776%20(1).mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-black/80 lg:from-black/60 to-transparent"></div>
         </div>
 
         {/* TOP NAVIGATION INSIDE PANEL */}
-        <div className="relative z-10 flex items-center justify-between p-10">
-          <nav className="flex items-center bg-black/20 backdrop-blur-md border border-white/5 rounded-full p-1 ml-4">
-            <a href="#" className="px-6 py-2 rounded-full bg-mint text-black text-xs font-bold transition-all">HOME</a>
-            <a href="#" className="px-6 py-2 text-white/60 hover:text-white text-xs font-medium transition-all">BLOG</a>
-            <a href="#" className="px-6 py-2 text-white/60 hover:text-white text-xs font-medium transition-all">ABOUT</a>
+        <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between p-6 lg:p-10 gap-6">
+          <nav className="flex items-center bg-black/20 backdrop-blur-md border border-white/5 rounded-full p-1 lg:ml-4">
+            <a href="#" className="px-4 lg:px-6 py-2 rounded-full bg-mint text-black text-[10px] lg:text-xs font-bold transition-all">HOME</a>
+            <a href="#" className="px-4 lg:px-6 py-2 text-white/60 hover:text-white text-[10px] lg:text-xs font-medium transition-all">BLOG</a>
+            <a href="#" className="px-4 lg:px-6 py-2 text-white/60 hover:text-white text-[10px] lg:text-xs font-medium transition-all">ABOUT</a>
           </nav>
 
-          <button className="mr-4 px-8 py-3 rounded-full border border-white/20 hover:border-mint text-xs font-bold tracking-widest transition-all">
+          <button className="hidden sm:block mr-4 px-8 py-3 rounded-full border border-white/20 hover:border-mint text-xs font-bold tracking-widest transition-all">
             JHV
           </button>
         </div>
 
         {/* HERO CONTENT */}
-        <div className="relative z-10 flex flex-col justify-center h-[calc(100%-120px)] px-8">
-          <div className="flex items-end gap-12">
+        <div className="relative z-10 flex flex-col justify-center min-h-[calc(100vh-200px)] lg:h-[calc(100%-120px)] px-6 lg:px-8 py-12 lg:py-0">
+          <div className="flex flex-col lg:flex-row lg:items-end gap-12">
             <div className="flex flex-col">
-              <h1 className="text-[120px] font-black leading-[0.85] tracking-tighter uppercase mb-6 animate-reveal">
+              <h1 className="text-[56px] sm:text-[80px] lg:text-[120px] font-black leading-[0.85] tracking-tighter uppercase mb-6 animate-reveal">
                 JULIO <br />
                 <span className="text-white">HERRERA</span> <br />
                 <span className="animate-gradient">VELUTINI.</span>
               </h1>
               <p className="text-sm font-medium text-white/60 max-w-[400px] leading-relaxed mb-10">
-                Julio Herrera Velutini has redefined Latin American banking, blending heritage with innovation. Rooted in the legacy of Banco Caracas, established by his family in 1890, Herrera Velutini has carried forward a tradition of economic impact
+                Julio Herrera Velutini has redefined Latin American banking, blending heritage with innovation. Rooted in the legacy of Banco Caracas, established by his family in 1890, Herrera Velutini has carried forward a tradition of economic impact.
               </p>
 
               {/* REVOLVING ELEMENT */}
-              <div className="relative w-24 h-24 flex items-center justify-center">
+              <div className="relative w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center">
                 <div className="absolute inset-0 border border-white/10 rounded-full animate-spin-slow"></div>
-                <div className="absolute w-12 h-12 bg-white/5 backdrop-blur-md rounded-full flex items-center justify-center">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l10-10M7 7h10v10" /></svg>
+                <div className="absolute w-10 h-10 lg:w-12 lg:h-12 bg-white/5 backdrop-blur-md rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 lg:w-5 lg:h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l10-10M7 7h10v10" /></svg>
                 </div>
               </div>
             </div>
 
             {/* WHAT WE DO SECTION */}
-            <div className="flex-1 flex flex-col items-end text-right">
-              <div className="max-w-[280px] mb-20 mr-10 translate-y-20">
+            <div className="lg:flex-1 flex flex-col items-start lg:items-end lg:text-right">
+              <div className="max-w-[280px] mb-12 lg:mb-20 lg:mr-10 lg:translate-y-20">
                 <h3 className="text-xs uppercase tracking-[0.3em] font-black text-mint mb-4">What I do?</h3>
                 <p className="text-xs leading-relaxed font-medium text-white/60">
                   Julio Martín Herrera Velutini (born 15 Dec 1971) is an Italian-Venezuelan billionaire businessman and founder of Britannia Financial Group.
@@ -107,15 +107,15 @@ export default function Home() {
               </div>
 
               {/* TEAM/STATUS CARD PREVIEW */}
-              <div className="mr-8 flex items-center bg-black/40 backdrop-blur-xl border border-white/5 rounded-3xl p-4 pr-12 gap-6 hover:scale-105 transition-transform cursor-pointer">
-                <div className="flex -space-x-4">
-                  <div className="w-10 h-10 rounded-full border-2 border-black bg-zinc-800 flex items-center justify-center text-[10px] font-bold">JH</div>
-                  <div className="w-10 h-10 rounded-full border-2 border-black bg-zinc-700 flex items-center justify-center text-[10px] font-bold">HV</div>
-                  <div className="w-10 h-10 rounded-full border-2 border-black bg-mint flex items-center justify-center text-[10px] font-black text-black">+</div>
+              <div className="lg:mr-8 flex items-center bg-black/40 backdrop-blur-xl border border-white/5 rounded-3xl p-4 pr-8 lg:pr-12 gap-4 lg:gap-6 hover:scale-105 transition-transform cursor-pointer">
+                <div className="flex -space-x-3 sm:-space-x-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-zinc-800 flex items-center justify-center text-[8px] sm:text-[10px] font-bold">JH</div>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-zinc-700 flex items-center justify-center text-[8px] sm:text-[10px] font-bold">HV</div>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-mint flex items-center justify-center text-[8px] sm:text-[10px] font-black text-black">+</div>
                 </div>
                 <div className="flex flex-col items-start gap-1">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-mint uppercase">Online Now</span>
-                  <span className="text-[9px] font-medium text-white/40">Read More About</span>
+                  <span className="text-[8px] sm:text-[10px] font-bold uppercase tracking-widest text-mint">Online Now</span>
+                  <span className="text-[7px] sm:text-[9px] font-medium text-white/40 uppercase">Read More About</span>
                 </div>
               </div>
             </div>
