@@ -79,7 +79,7 @@ body {
 }
 
 .animate-gradient {
-  background: linear-gradient(-45deg, #ffffffb9, #B4F4D3, #494848d4, #ffffff);
+  background: linear-gradient(-45deg, #ffffffb9, #898e8c, #494848d4, #ffffff);
   background-size: 400% 400%;
   animation: gradient-shift 10s ease infinite;
   -webkit-background-clip: text;

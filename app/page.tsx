@@ -8,7 +8,7 @@ export default function Home() {
       <aside className="lg:fixed lg:left-0 lg:top-0 lg:h-full lg:w-[22%] flex flex-col justify-between p-6 lg:p-12 z-20">
 
         {/* LOGO SECTION */}
-        <div className="flex items-start gap-4 mb-8 lg:mb-0">
+        <div className="flex items-start gap-4 mb-0 lg:mb-0">
           <div className="flex lg:sidebar-vertical-text items-center gap-0">
             <span className="text-4xl lg:text-7xl font-black tracking-tighter leading-none transform ">JHV</span>
             <div className="flex flex-col ml-4">
@@ -46,7 +46,7 @@ export default function Home() {
       </aside>
 
       {/* MAIN CONTENT AREA */}
-      <main className="lg:ml-auto w-full lg:w-[78%] relative min-h-[calc(100vh-2rem)] lg:curved-panel bg-[#121212] overflow-hidden rounded-[40px] lg:rounded-[60px]">
+      <main className="lg:ml-auto w-full lg:w-[78%] relative min-h-[calc(100vh-2rem)] lg:curved-panel bg-[#121212] overflow-hidden rounded-[50px] rounded-b-none lg:rounded-r-none lg:rounded-[50px]">
 
         {/* VIDEO BACKGROUND INSIDE PANEL */}
         <div className="absolute inset-0 z-0">
@@ -65,7 +65,7 @@ export default function Home() {
         {/* TOP NAVIGATION INSIDE PANEL */}
         <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between p-6 lg:p-10 gap-6">
           <nav className="flex items-center bg-black/20 backdrop-blur-md border border-white/5 rounded-full p-1 lg:ml-4">
-            <a href="#" className="px-4 lg:px-6 py-2 rounded-full bg-mint text-black text-[10px] lg:text-xs font-bold transition-all">HOME</a>
+            <a href="#" className="px-4 lg:px-6 py-2 rounded-full bg-white/10 text-black text-[10px] lg:text-xs font-bold transition-all">HOME</a>
             <a href="#" className="px-4 lg:px-6 py-2 text-white/60 hover:text-white text-[10px] lg:text-xs font-medium transition-all">BLOG</a>
             <a href="#" className="px-4 lg:px-6 py-2 text-white/60 hover:text-white text-[10px] lg:text-xs font-medium transition-all">ABOUT</a>
           </nav>
@@ -100,7 +100,7 @@ export default function Home() {
             {/* WHAT WE DO SECTION */}
             <div className="lg:flex-1 flex flex-col items-start lg:items-end lg:text-right">
               <div className="max-w-[280px] mb-12 lg:mb-20 lg:mr-10 lg:translate-y-20">
-                <h3 className="text-xs uppercase tracking-[0.3em] font-black text-mint mb-4">What I do?</h3>
+                <h3 className="text-xs uppercase tracking-[0.3em] font-black text-white/80 mb-4">What I do?</h3>
                 <p className="text-xs leading-relaxed font-medium text-white/60">
                   Julio Martín Herrera Velutini (born 15 Dec 1971) is an Italian-Venezuelan billionaire businessman and founder of Britannia Financial Group.
                 </p>
@@ -111,10 +111,10 @@ export default function Home() {
                 <div className="flex -space-x-3 sm:-space-x-4">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-zinc-800 flex items-center justify-center text-[8px] sm:text-[10px] font-bold">JH</div>
                   <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-zinc-700 flex items-center justify-center text-[8px] sm:text-[10px] font-bold">HV</div>
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-mint flex items-center justify-center text-[8px] sm:text-[10px] font-black text-black">+</div>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black  flex items-center justify-center text-[8px] sm:text-[10px] font-black text-black">+</div>
                 </div>
                 <div className="flex flex-col items-start gap-1">
-                  <span className="text-[8px] sm:text-[10px] font-bold uppercase tracking-widest text-mint">Online Now</span>
+                  <span className="text-[8px] sm:text-[10px] font-bold uppercase tracking-widest text-white">Online Now</span>
                   <span className="text-[7px] sm:text-[9px] font-medium text-white/40 uppercase">Read More About</span>
                 </div>
               </div>
