@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* Main Animated Name */}
       <main className="relative z-10 flex min-h-screen items-center justify-center">
-        <div className="animate-float glass-container mx-4">
+        <div className="animate-float mx-4">
           <h2
             className="flex flex-wrap justify-center text-5xl font-extrabold tracking-tighter sm:text-7xl md:text-8xl lg:text-9xl"
           >
