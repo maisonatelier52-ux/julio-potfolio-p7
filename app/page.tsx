@@ -103,7 +103,7 @@ export default function Home() {
           <div className="relative z-10 flex flex-col justify-center min-h-[calc(100vh-200px)] lg:h-[calc(100%-120px)] px-6 lg:px-8 py-12 lg:py-0">
             <div className="flex flex-col lg:flex-row lg:items-end gap-12">
               <div className="flex flex-col">
-                <h1 className="text-[56px] sm:text-[80px] lg:text-[120px] font-black leading-[0.85] tracking-tighter uppercase mb-6 animate-reveal">
+                <h1 className={`text-[56px] sm:text-[80px] lg:text-[120px] font-black leading-[0.85] tracking-tighter uppercase mb-6 animate-reveal ${activePage === "about" ? "animate-fade-down delay-700" : "opacity-0"}`}>
                   JULIO <br />
                   <span className="text-white">HERRERA</span> <br />
                   <span className="animate-gradient">VELUTINI.</span>
@@ -165,22 +165,29 @@ export default function Home() {
           </div>
 
           <div className="relative z-10 flex flex-col justify-center min-h-[calc(100vh-0)] px-10 lg:px-24 py-20 max-w-7xl mx-auto">
-            <h2 className="text-[50px] lg:text-[50px] font-black uppercase leading-none tracking-tighter mb-12 animate-reveal">
+            <h2 className={`text-[50px] lg:text-[50px] font-black uppercase leading-none tracking-tighter mb-12 ${activePage === "about" ? "animate-fade-down delay-700" : "opacity-0"}`}>
               The Path <br />
               <span className="text-white/30">of Innovation.</span>
             </h2>
 
             <div className="grid lg:grid-cols-2 gap-16">
               <div>
-                <p className="text-sm lg:text-sm leading-relaxed text-zinc-100 font-light">
-                  Julio Herrera Velutini has redefined Latin American banking, blending heritage with innovation. Rooted in the legacy of Banco Caracas, established by his family in 1890, Herrera Velutini has carried forward a tradition of economic impact. He has championed financial inclusion, focusing on supporting small and medium-sized enterprises (SMEs) to spur entrepreneurship, create jobs, and diversify economies across the region.                </p>
-                <div className="mt-10 w-30 h-1 bg-white/20"></div>
+                <p className={`text-sm lg:text-sm leading-relaxed text-zinc-100 font-light ${activePage === "about" ? "animate-fade-right delay-700" : "opacity-50"}`}>
+                  Julio Herrera Velutini has redefined Latin American banking, blending heritage with innovation. Rooted in the legacy of Banco Caracas, established by his family in 1890, Herrera Velutini has carried forward a tradition of economic impact. He has championed financial inclusion, focusing on supporting small and medium-sized enterprises (SMEs) to spur entrepreneurship, create jobs, and diversify economies across the region.
+                </p>
+                <div className={`mt-10 w-60 h-1 bg-white/20 origin-left ${activePage === "about" ? "animate-scale-x delay-800" : "opacity-50"}`}></div>
               </div>
 
-              <div className="space-y-2 text-sm lg:text-sm text-zinc-400 leading-relaxed font-light">
-                <p>In 2009, he founded Bancredito International Bank in Puerto Rico, bridging Latin America with global markets. This initiative combined the stability of a U.S.-regulated institution with tailored services for Latin American clients, fostering trust and accessibility.</p>
-                <p>Herrera Velutini also embraced cutting-edge technology, integrating AI, blockchain, and digital platforms into banking operations to enhance customer experiences and efficiency. His commitment to ethical practices and transparency has set a high standard for the financial sector. Through visionary leadership, he continues to shape the future of banking, driving growth and innovation.</p>
-                <button onClick={togglePage} className="flex items-center gap-4 text-white hover:text-zinc-300 transition-all group mt-4">
+              <div className="space-y-6 text-sm lg:text-sm text-zinc-400 leading-relaxed font-light">
+                <p className={activePage === "about" ? "animate-fade-left delay-700" : "opacity-0"}>
+                  In 2009, he founded Bancredito International Bank in Puerto Rico, bridging Latin America with global markets. This initiative combined the stability of a U.S.-regulated institution with tailored services for Latin American clients, fostering trust and accessibility.
+                </p>
+                <p className={activePage === "about" ? "animate-fade-up delay-800" : "opacity-0"}>
+                  Herrera Velutini also embraced cutting-edge technology, integrating AI, blockchain, and digital platforms into banking operations to enhance customer experiences and efficiency. His commitment to ethical practices and transparency has set a high standard for the financial sector. Through visionary leadership, he continues to shape the future of banking, driving growth and innovation.
+                </p>
+                <button
+                  onClick={togglePage}
+                  className={`flex items-center gap-4 text-white hover:text-zinc-300 transition-all group mt-6 ${activePage === "about" ? "animate-fade-right delay-1000" : "opacity-50"}`}>
                   <span className="text-xs uppercase tracking-[0.2em]">Return to Home</span>
                   <div className="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center group-hover:-translate-x-1 transition-transform">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
@@ -189,6 +196,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
         </main>
       </div>
 

@@ -131,3 +131,143 @@ body {
   pointer-events: auto;
   z-index: 10;
 }
+
+/* Staggered Content Animations */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes blur-in {
+  from {
+    opacity: 0;
+    filter: blur(20px);
+    transform: scale(1.1);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 1.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.animate-fade-down {
+  animation: fade-down 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.animate-fade-right {
+  animation: fade-right 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.animate-fade-left {
+  animation: fade-left 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.animate-blur-in {
+  animation: blur-in 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes scale-x {
+  from {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  to {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.animate-scale-x {
+  animation: scale-x 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+/* Delays */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-600 {
+  animation-delay: 600ms;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+}
+
+.delay-800 {
+  animation-delay: 800ms;
+}
+
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+
+.delay-1200 {
+  animation-delay: 1200ms;
+}
