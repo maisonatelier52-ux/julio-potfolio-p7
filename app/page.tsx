@@ -107,11 +107,11 @@ export default function Home() {
               </div>
 
               {/* TEAM/STATUS CARD PREVIEW */}
-              <div className="lg:mr-8 flex items-center bg-black/40 backdrop-blur-xl border border-white/5 rounded-3xl p-4 pr-8 lg:pr-12 gap-4 lg:gap-6 hover:scale-105 transition-transform cursor-pointer">
+              <div className="lg:mr-8 flex items-center bg-black/40 backdrop-blur-xl border border-white/5 rounded-3xl p-4 pr-8 lg:pr-12 gap-4 lg:gap-6 hover:scale-105 transition-transform cursor-pointer mt-1">
                 <div className="flex -space-x-3 sm:-space-x-4">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-zinc-800 flex items-center justify-center text-[8px] sm:text-[10px] font-bold">JH</div>
                   <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-zinc-700 flex items-center justify-center text-[8px] sm:text-[10px] font-bold">HV</div>
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black  flex items-center justify-center text-[8px] sm:text-[10px] font-black text-black">+</div>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-gray-300  flex items-center justify-center text-[8px] sm:text-[10px] font-black text-black">+</div>
                 </div>
                 <div className="flex flex-col items-start gap-1">
                   <span className="text-[8px] sm:text-[10px] font-bold uppercase tracking-widest text-white">Online Now</span>
