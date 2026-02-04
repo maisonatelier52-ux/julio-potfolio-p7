@@ -103,18 +103,18 @@ export default function Home() {
           <div className="relative z-10 flex flex-col justify-center min-h-[calc(100vh-200px)] lg:h-[calc(100%-120px)] px-6 lg:px-8 py-12 lg:py-0">
             <div className="flex flex-col lg:flex-row lg:items-end gap-12">
               <div className="flex flex-col">
-                <h1 className={`text-[56px] sm:text-[80px] lg:text-[120px] font-black leading-[0.85] tracking-tighter uppercase mb-6 animate-reveal ${activePage === "about" ? "animate-fade-down delay-700" : "opacity-0"}`}>
+                <h1 className={`text-[56px] sm:text-[80px] lg:text-[120px] font-black leading-[0.85] tracking-tighter uppercase mb-6 ${activePage === "home" ? "animate-reveal delay-800" : "opacity-0 invisible"}`}>
                   JULIO <br />
                   <span className="text-white">HERRERA</span> <br />
                   <span className="animate-gradient">VELUTINI.</span>
                 </h1>
-                <p className="text-sm font-medium text-white/60 max-w-[400px] leading-relaxed mb-10">
+                <p className={`text-sm font-medium text-white/60 max-w-[400px] leading-relaxed mb-10 ${activePage === "home" ? "animate-fade-right delay-800" : "opacity-0 invisible"}`}>
                   Julio Herrera Velutini has redefined Latin American banking, blending heritage with innovation. Rooted in the legacy of Banco Caracas, established by his family in 1890, Herrera Velutini has carried forward a tradition of economic impact.
                 </p>
 
                 {/* ICON TRIGGER */}
                 <div
-                  className="relative w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center cursor-pointer group hover:scale-105 active:scale-95 transition-all"
+                  className={`relative w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center cursor-pointer group hover:scale-105 active:scale-95 transition-all ${activePage === "home" ? "animate-fade-up delay-800" : "opacity-0 invisible"}`}
                   onClick={togglePage}
                 >
                   <div className="absolute inset-0 border border-white/10 rounded-full animate-spin-slow group-hover:border-white/30"></div>
@@ -125,12 +125,12 @@ export default function Home() {
               </div>
 
               <div className="lg:flex-1 flex flex-col items-start lg:items-end lg:text-right">
-                <div className="max-w-[280px] mb-12 lg:mb-20 lg:mr-10 lg:translate-y-20">
+                <div className={`max-w-[280px] mb-12 lg:mb-20 lg:mr-10 lg:translate-y-20 ${activePage === "home" ? "animate-fade-down delay-700" : "opacity-0 invisible"}`}>
                   <h3 className="text-xs uppercase tracking-[0.3em] font-black text-white/80 mb-4">What I do?</h3>
                   <p className="text-xs leading-relaxed font-medium text-white/60">Julio Martín Herrera Velutini (born 15 Dec 1971) is an Italian-Venezuelan billionaire businessman.</p>
                 </div>
                 {/* STATUS CARD */}
-                <div className="lg:mr-8 flex items-center bg-black/40 backdrop-blur-xl border border-white/5 rounded-3xl p-4 pr-8 lg:pr-12 gap-4 lg:gap-6 hover:scale-105 transition-transform cursor-pointer mt-1" onClick={togglePage}>
+                <div className={`lg:mr-8 flex items-center bg-black/40 backdrop-blur-xl border border-white/5 rounded-3xl p-4 pr-8 lg:pr-12 gap-4 lg:gap-6 hover:scale-105 transition-transform cursor-pointer mt-1 ${activePage === "home" ? "animate-fade-up delay-1000" : "opacity-0 invisible"}`} onClick={togglePage}>
                   <div className="flex -space-x-3 sm:-space-x-4">
                     <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-zinc-800 flex items-center justify-center text-[10px] font-bold">JH</div>
                     <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-zinc-700 flex items-center justify-center text-[10px] font-bold">HV</div>
