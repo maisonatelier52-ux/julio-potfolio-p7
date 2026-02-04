@@ -73,7 +73,7 @@ export default function Home() {
       </aside>
 
       {/* MAIN PANEL AREA - THE "SWAP" ZONE */}
-      <div className="lg:ml-[22%] w-full lg:w-[78%] relative min-h-[calc(100vh)] panel-transition-container z-20 overflow-hidden py-4">
+      <div className="lg:ml-[22%] w-full lg:w-[78%] relative min-h-[calc(100vh)] panel-transition-container z-20 overflow-hidden py-0 md:py-4">
 
         {/* PANEL 1: HOME (Invisibly slides right when 'about' is active) */}
         <main className={`panel-transition-item  bg-[#121212] overflow-hidden rounded-[50px] rounded-b-none lg:rounded-r-none lg:rounded-[50px] ${activePage === "home" ? "panel-active" : "panel-exit-right"}`}>
