@@ -147,7 +147,7 @@ export default function Home() {
         </main>
 
         {/* PANEL 2: ABOUT (Invisibly slides in from left when triggered) */}
-        <main className={`panel-transition-item bg-[#121212] overflow-hidden rounded-[50px] rounded-b-none lg:rounded-r-none lg:rounded-[50px] ${activePage === "about" ? "panel-active" : "panel-enter-left"}`}>
+        <main className={`panel-transition-item bg-[#121212] overflow-hidden rounded-[50px] rounded-b-none lg:rounded-r-none lg:rounded-[50px] ${activePage === "about" ? "panel-active" : "panel-exit-right"}`}>
 
           {/* VIDEO BACKGROUND */}
           <div className="absolute inset-0 z-0 bg-white/40">
