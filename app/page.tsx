@@ -143,7 +143,7 @@ export default function Home() {
                     <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-black bg-gray-300 flex items-center justify-center text-[10px] font-black text-black">+</div>
                   </div>
                   <div className="flex flex-col items-start gap-1">
-                    <span className="text-[8px] sm:text-[10px] font-bold uppercase tracking-widest text-white">Online Now</span>
+                    <span className="text-[8px] sm:text-[10px] font-bold uppercase tracking-widest text-white">Shaping Economy</span>
                     <span className="text-[7px] sm:text-[9px] font-medium text-white/40 uppercase">View The Influence</span>
                   </div>
                 </div>
