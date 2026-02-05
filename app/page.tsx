@@ -65,7 +65,7 @@ export default function Home() {
             onClick={togglePage}
             className="flex items-center justify-between w-full max-w-[260px] bg-white/5 border border-white/10 hover:border-white/50 py-3 px-6 rounded-full transition-all group disabled:opacity-50">
             <span className="text-[10px] uppercase tracking-widest font-bold">
-              {activePage === "home" ? "Read More About" : "Back to Vision"}
+              {activePage === "home" ? "Read More About" : "Back to Home"}
             </span>
             <div className=" text-white rounded-full group-hover:scale-110 transition-transform">
               <svg
