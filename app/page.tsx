@@ -82,7 +82,7 @@ export default function Home() {
       <div className="lg:ml-[22%] w-full lg:w-[78%] relative min-h-[calc(100vh)] panel-transition-container z-20 overflow-hidden py-0 md:py-4">
 
         {/* PANEL 1: HOME */}
-        <main className={`panel-transition-item bg-[#121212] overflow-hidden rounded-[50px] rounded-b-none lg:rounded-r-none lg:rounded-[50px] ${activePage === "home" ? "panel-active" : "panel-exit-right"}`}>
+        <main className={`panel-transition-item bg-[#121212] !overflow-hidden !rounded-[50px] !rounded-b-none lg:!rounded-r-none lg:!rounded-[50px] ${activePage === "home" ? "panel-active" : "panel-exit-right"}`}>
 
           <div className="absolute inset-0 z-0">
             <video
@@ -153,7 +153,7 @@ export default function Home() {
         </main>
 
         {/* PANEL 2: ABOUT (Invisibly slides in from left when triggered) */}
-        <main className={`panel-transition-item bg-[#121212] overflow-hidden rounded-[50px] rounded-b-none lg:rounded-r-none lg:rounded-[50px] ${activePage === "about" ? "panel-active" : "panel-exit-right"}`}>
+        <main className={`panel-transition-item bg-[#121212] !overflow-hidden !rounded-[50px] !rounded-b-none lg:!rounded-r-none lg:!rounded-[50px] ${activePage === "about" ? "panel-active" : "panel-enter-left"}`}>
 
           {/* VIDEO BACKGROUND */}
           <div className="absolute inset-0 z-0 bg-white/40">
@@ -204,7 +204,7 @@ export default function Home() {
         </main>
 
         {/* PANEL 3: INFLUENCE */}
-        <main className={`panel-transition-item bg-[#121212] overflow-hidden rounded-[50px] rounded-b-none lg:rounded-r-none lg:rounded-[50px] ${activePage === "influence" ? "panel-active" : "panel-exit-right"}`}>
+        <main className={`panel-transition-item bg-[#121212] !overflow-hidden !rounded-[50px] !rounded-b-none lg:!rounded-r-none lg:!rounded-[50px] ${activePage === "influence" ? "panel-active" : "panel-enter-left"}`}>
 
           {/* VIDEO BACKGROUND */}
           <div className="absolute inset-0 z-0 bg-white/40">
